@@ -29,10 +29,15 @@ router.post('/move', function (req, res) {
       taunt: 'Outta my way, snake!', // optional, but encouraged!
     }
     try{ 
-    console.log(req.body);  
-    if (req.body.coords[0][0] == 1) {
-      data.move = 'down';
+    console.log(req.body);
+    for (let snake of req.body.snakes){
+        if (req.body.you == snake.id) {
+             if (snake.coords[0][0] == 1) {
+                 data.move = 'down';
+              }
+        }
     }
+   
     } catch(error){console.log(error)}
   
   return res.json(data)
