@@ -35,9 +35,6 @@ router.post('/move', function (req, res) {
              if (snake.coords[0][0] == 0) {
                  data.move = 'down';
               }
-              if (snake.coords[0][1] == 15) {
-                data.move = 'right';  
-              }
         }
     }
    
