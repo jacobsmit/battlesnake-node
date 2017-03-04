@@ -4,7 +4,9 @@ var router  = express.Router()
 // Handle POST request to '/start'
 router.post('/start', function (req, res) {
   // NOTE: Do something here to start the game
-  console.log(req.game_id)
+  var gameID = req.game_id
+  var height = req.height
+  var width = req.width
   // Response data
   var data = {
     color: "#DFFF00",
