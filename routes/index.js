@@ -58,7 +58,7 @@ try{
                 else {
                     data.move = lastMove;  
                 }
-                if (snake.coords[0][1] == req.body.food[0][1] && snake.coords[0][1] == 0){
+                if (snake.coords[0][0] == req.body.food[0][0] && snake.coords[0][1] == 0){
                   data.move = 'right'
                   if (snake.coords[0][1] == (startVar.width-1)){
                       data.move = 'up';  
