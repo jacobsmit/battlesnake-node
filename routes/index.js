@@ -5,9 +5,8 @@ var router  = express.Router()
 router.post('/start', function (req, res) {
   // NOTE: Do something here to start the game
   var startVar = {
-    gameID: req.game_id,
-    height: = req.height,
-    width: = req.width,
+    height: req.height,
+    width: req.width,
   }
   // Response data
   var data = {
