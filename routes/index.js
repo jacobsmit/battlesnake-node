@@ -42,7 +42,7 @@ router.post('/move', function (req, res) {
     }
    
     } catch(error){console.log(error)}
-  
+  console.log(startVar.hieght);
   return res.json(data)
 })
 
