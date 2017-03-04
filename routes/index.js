@@ -31,7 +31,6 @@ var data = {
       taunt: 'Outta my way, snake!', // optional, but encouraged!
     }
 try{ 
-    console.log(req.body);
     for (let snake of req.body.snakes){
         if (req.body.you == snake.id) {
              if (loopStarted == true) {
