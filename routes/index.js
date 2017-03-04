@@ -30,10 +30,10 @@ router.post('/move', function (req, res) {
     if (req.coords[0][0] > 1) {
       move: 'left', // one of: ['up','down','left','right']
       taunt: 'Outta my way, snake!', // optional, but encouraged!
-    }
+    },
     else {
       move: 'up',  
-    }
+    },
   }
 
   return res.json(data)
