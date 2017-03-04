@@ -2,10 +2,11 @@ var express = require('express')
 var router  = express.Router()
 var loopStarted = false;
 var startVar;
-var lastMove = 'left';
+var lastMove;
 // Handle POST request to '/start'
 router.post('/start', function (req, res) {
   // NOTE: Do something here to start the game
+  lastMove = 'left';
   startVar = {
     height: req.height,
     width: req.width,
