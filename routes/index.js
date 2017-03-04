@@ -59,7 +59,10 @@ try{
                     data.move = lastMove;  
                 }
                 if (lastMove = 'down' && snake.coords[0][1] == req.body.food[0][1]){
-                  data.move = 'right'  
+                  data.move = 'right'
+                  if (snake.coords[0][1] == (startVar.width-1)){
+                      data.move = 'up';  
+                  }
                 }
              } 
              if (loopStarted == false) {
