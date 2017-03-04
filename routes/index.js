@@ -9,8 +9,8 @@ router.post('/start', function (req, res) {
   lastMove = 'left';
   loopStarted = false;
   startVar = {
-    height: req.height,
-    width: req.width,
+    height: req.body.height,
+    width: req.body.width,
   }
   // Response data
   var data = {
