@@ -60,6 +60,7 @@ try{
         }
     }
 } catch(error){console.log(error)}
+  console.log(data.move);
   return res.json(data) 
 })
 
