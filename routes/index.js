@@ -39,7 +39,7 @@ try{
                     console.log("move down");
                     lastMove = 'down';
                 }
-                else if (snake.coords[0][1] == startVar.height && snake.coords[0][0] == startVar.width){
+                else if (snake.coords[0][1] == startVar.height && snake.coords[0][0] == 0){
                     data.move = 'right';
                     console.log("move right");
                     lastMove = 'right';
