@@ -28,8 +28,9 @@ router.post('/move', function (req, res) {
       move: 'left', // one of: ['up','down','left','right']
       taunt: 'Outta my way, snake!', // optional, but encouraged!
     }
-    
-  //data.move = 'left';
+    if (req.body.coords[0][0] == 1) {
+      data.move = 'up';
+    }
   
   return res.json(data)
 })
