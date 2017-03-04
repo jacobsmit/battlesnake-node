@@ -12,9 +12,11 @@ router.post('/start', function (req, res) {
   // Response data
   var data = {
     color: "#DFFF00",
-    name: startVar.height,
+    name: "JakeTheSnake",
     head_url: "http://www.placecage.com/c/200/200", // optional, but encouraged!
     taunt: "Let's do thisss thang!", // optional, but encouraged!
+    head_type: "tongue",
+    tail_type: "curled",
   }
 
   return res.json(data)
