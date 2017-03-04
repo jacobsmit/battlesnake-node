@@ -1,10 +1,10 @@
 var express = require('express')
 var router  = express.Router()
-
+var startVar;
 // Handle POST request to '/start'
 router.post('/start', function (req, res) {
   // NOTE: Do something here to start the game
-  var startVar = {
+  startVar = {
     height: req.height,
     width: req.width,
   }
@@ -37,8 +37,8 @@ try{
              }
         }
     }
-    } catch(error){console.log(error)}
-  console.log(startVar.hieght);
+} catch(error){console.log(error)}
+  console.log(startVar.height);
   return res.json(data) 
 })
 
