@@ -35,6 +35,9 @@ try{
              if (snake.coords[0][0] == 0) {
                  data.move = 'down';
              }
+             if (snake.coords[0][1] == startVar.height){
+                data.move = 'right';  
+             }
         }
     }
 } catch(error){console.log(error)}
