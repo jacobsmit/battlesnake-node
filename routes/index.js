@@ -73,7 +73,7 @@ try{
     }
 } catch(error){console.log(error)}
   console.log(data.move);
-  console.log(req.food);
+  console.log(req.body.food);
   console.log(startVar);
   return res.json(data) 
 })
