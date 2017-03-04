@@ -25,14 +25,15 @@ router.post('/start', function (req, res) {
 router.post('/move', function (req, res) {
   // NOTE: Do something here to generate your move
   var data = {
-     move: 'left', // one of: ['up','down','left','right']
+      move: 'left', // one of: ['up','down','left','right']
       taunt: 'Outta my way, snake!', // optional, but encouraged!
     }
+    try{
     if (req.body.coords[0][0] == 1) {
       data.move = 'down';
     }
+    } catch(error){console.log(error)}
   
-  console.log(data); 
   return res.json(data)
 })
 
