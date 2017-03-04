@@ -52,6 +52,7 @@ try{
                  if (snake.coords[0][0] == 0) {
                    data.move = 'down';
                    loopStarted = true;
+                   console.log(snake.coords);
                    console.log(loopStarted, "Setting Loop started as true");
                    lastMove = 'down';
                  }
