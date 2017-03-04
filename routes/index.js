@@ -29,7 +29,7 @@ router.post('/move', function (req, res) {
       taunt: 'Outta my way, snake!', // optional, but encouraged!
     }
     if (req.body.coords[0][0] == 1) {
-      data.move = 'down';
+      data.taunt = 'Test';
     }
   
   return res.json(data)
