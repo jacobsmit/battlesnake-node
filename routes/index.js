@@ -36,15 +36,18 @@ try{
              if (loopStarted == true) {
                 if (snake.coords[0][0] == 0 && snake.coords[0][1] == 0) {
                     data.move = 'down';
+                    console.log("move down");
                 }
                 if (snake.coords[0][1] == startVar.height && snake.coords[0][0] == startVar.width){
-                    data.move = 'right';  
+                    data.move = 'right';
+                    console.log("move right");
                 }
              } 
              if (loopStarted == false) {
                  if (snake.coords[0][0] == 0) {
                    data.move = 'down';
                    loopStarted = true;
+                   console.log(loopStarted, "Setting Loop started as true");
                  }
              }
             
