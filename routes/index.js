@@ -42,15 +42,15 @@ try{
                 }
              } 
              if (loopStarted == false) {
-                 if (snake.coords[0][0] == 0)
+                 if (snake.coords[0][0] == 0) {
                    data.move = 'down';
                    loopStarted = true;
+                 }
              }
             
         }
     }
 } catch(error){console.log(error)}
-  console.log(startVar.height);
   return res.json(data) 
 })
 
