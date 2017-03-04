@@ -1,5 +1,6 @@
 var express = require('express')
 var router  = express.Router()
+var loopStarted = false;
 var startVar;
 // Handle POST request to '/start'
 router.post('/start', function (req, res) {
@@ -32,12 +33,20 @@ try{
     console.log(req.body);
     for (let snake of req.body.snakes){
         if (req.body.you == snake.id) {
-             if (snake.coords[0][0] == 0 && snake.coords[0][1] == 0) {
-                 data.move = 'down';
+             if (loopStarted == true) {
+                if (snake.coords[0][0] == 0 && snake.coords[0][1] == 0) {
+                    data.move = 'down';
+                }
+                if (snake.coords[0][1] == startVar.height && snake.coords[0][0] == startVar.width){
+                    data.move = 'right';  
+                }
+             } 
+             if (loopStarted == false) {
+                 if (snake.coords[0][0] == 0)
+                   data.move = 'down';
+                   loopStarted = true;
              }
-             if (snake.coords[0][1] == startVar.height && snake.coords[0][0] == startVar.width){
-                data.move = 'right';  
-             }
+            
         }
     }
 } catch(error){console.log(error)}
