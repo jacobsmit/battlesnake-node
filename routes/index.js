@@ -4,13 +4,15 @@ var router  = express.Router()
 // Handle POST request to '/start'
 router.post('/start', function (req, res) {
   // NOTE: Do something here to start the game
-  var gameID = req.game_id
-  var height = req.height
-  var width = req.width
+  var startVar = {
+    gameID = req.game_id
+    height = req.height
+    width = req.width
+  }
   // Response data
   var data = {
     color: "#DFFF00",
-    name: "Trump Snake",
+    name: startVar.height,
     head_url: "http://www.placecage.com/c/200/200", // optional, but encouraged!
     taunt: "Let's do thisss thang!", // optional, but encouraged!
   }
