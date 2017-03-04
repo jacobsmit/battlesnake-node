@@ -24,20 +24,19 @@ router.post('/start', function (req, res) {
 // Handle POST request to '/move'
 router.post('/move', function (req, res) {
   // NOTE: Do something here to generate your move
-  var data = {
+var data = {
       move: 'left', // one of: ['up','down','left','right']
       taunt: 'Outta my way, snake!', // optional, but encouraged!
     }
-    try{ 
+try{ 
     console.log(req.body);
     for (let snake of req.body.snakes){
         if (req.body.you == snake.id) {
              if (snake.coords[0][0] == 0) {
                  data.move = 'down';
-              }
+             }
         }
     }
-   
     } catch(error){console.log(error)}
   console.log(startVar.hieght);
   return res.json(data) 
