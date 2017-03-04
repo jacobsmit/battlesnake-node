@@ -65,6 +65,7 @@ try{
     }
 } catch(error){console.log(error)}
   console.log(data.move);
+  console.log(startVar);
   return res.json(data) 
 })
 
