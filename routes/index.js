@@ -48,7 +48,12 @@ try{
                     lastMove = 'right';
                 }
                else if (snake.coords[0][0] == (startVar.width-1) && snake.coords[0][1] == (startVar.height-1)) {
-                    data.move = 'up';         
+                    data.move = 'up';
+                    lastMove = 'up';
+               }
+               else if (snake.coords[0][0] == (startVar.width-1) && snake.coords[0][1] == 0) {
+                    data.move = 'left';
+                    lastMove = 'left';
                }
                 else {
                     data.move = lastMove;  
