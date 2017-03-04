@@ -36,7 +36,8 @@ try{
     for (let snake of req.body.snakes){
         if (req.body.you == snake.id) {
              if (loopStarted == true) {
-                if (snake.coords[0][0] == 0 && snake.coords[0][1] == 0) {
+               console.log(loopStarted, "loop has started"); 
+               if (snake.coords[0][0] == 0 && snake.coords[0][1] == 0) {
                     data.move = 'down';
                     console.log("move down");
                     lastMove = 'down';
