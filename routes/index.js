@@ -16,8 +16,8 @@ router.post('/start', function (req, res) {
   var data = {
     color: "#DFFF00",
     name: "JakeTheSnake",
-    head_url: "http://giphy.com/gifs/movie-bee-full-rUxSaLgjcQbLO", // optional, but encouraged!
-    taunt: "Let's do thisss thang!", // optional, but encouraged!
+    head_url: "https://pbs.twimg.com/profile_images/753571163243057152/v8rga-7U.jpg", // optional, but encouraged!
+    taunt: "You Like Jazz??", // optional, but encouraged!
     head_type: "tongue",
     tail_type: "curled",
   }
