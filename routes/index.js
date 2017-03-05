@@ -63,6 +63,11 @@ try{
                   if (snake.coords[0][1] == (startVar.width-1)){
                       data.move = 'up';  
                   }
+                  if (snake.coords[0][0] == req.body.food[0][0] && snake.coords[0][1] == (startVar.width-1)){
+                  data.move = 'left'
+                  if (snake.coords[0][1] == 0){
+                      data.move = 'down';  
+                  }
                 }
              } 
              if (loopStarted == false) {
