@@ -59,7 +59,7 @@ try{
                     data.move = lastMove;  
                 }
                for (var i = 0; i < 6; i++) {
-                  console.print(req.body.food[i][0]);  
+                  console.log(req.body.food[i][0]);  
                }
              } 
              if (loopStarted == false) {
