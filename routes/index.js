@@ -66,6 +66,9 @@ try{
                    console.log(snake.coords);
                    console.log(loopStarted, "Setting Loop started as true");
                    lastMove = 'down';
+               for (var i in req.body.food) {
+                  console.print(i);  
+               }
                  }
              }
         }
