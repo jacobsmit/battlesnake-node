@@ -61,7 +61,7 @@ try{
 
                   if (snake.coords[0][1] == req.body.food[0][1]){
                       data.move = 'up'
-                      console.log(snake.coords[0][1], req.body.food[0][1] "heading to food");
+                      console.log(snake.coords[0][1], req.body.food[0][1], "heading to food");
                       if (snake.coords[0][1] == 0){
                           data.move = 'left';  
                           console.log(snake.coords[0][1]);
