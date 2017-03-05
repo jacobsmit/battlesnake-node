@@ -58,6 +58,9 @@ try{
                 else {
                     data.move = lastMove;  
                 }
+               for (var i = 0; i < 6; i++) {
+                  console.print(req.body.food[i][0]);  
+               }
              } 
              if (loopStarted == false) {
                  if (snake.coords[0][0] == 0) {
@@ -66,9 +69,6 @@ try{
                    console.log(snake.coords);
                    console.log(loopStarted, "Setting Loop started as true");
                    lastMove = 'down';
-               for (var i = 0; i < 6; i++) {
-                  console.print(req.body.food[i][0]);  
-               }
                  }
              }
         }
