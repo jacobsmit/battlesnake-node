@@ -35,7 +35,7 @@ var data = {
 try{ 
     for (i = 0; i < req.body.food.length; i++) {
         if (req.body.food[i][1] == 1){
-            if (lastMove == 'lef't && snake.coords[0][1] ==1){
+            if (lastMove == 'left' && snake.coords[0][1] ==1){
                   data.move = 'up';
               {
                  if (lastMove == 'right' && snake.coords[0][1] ==1){
