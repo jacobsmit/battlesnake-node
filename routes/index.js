@@ -30,7 +30,7 @@ router.post('/move', function (req, res) {
   // NOTE: Do something here to generate your move
 var data = {
       move: 'left', // one of: ['up','down','left','right']
-      taunt: 'Outta my way, snake!', // optional, but encouraged!
+      taunt: 'You Like Jazz??', // optional, but encouraged!
     }
 try{ 
     for (let snake of req.body.snakes){
