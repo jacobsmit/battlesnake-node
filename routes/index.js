@@ -16,7 +16,7 @@ router.post('/start', function (req, res) {
   var data = {
     color: "#DFFF00",
     name: "JakeTheSnake",
-    head_url: "http://www.placecage.com/c/200/200", // optional, but encouraged!
+    head_url: "http://giphy.com/gifs/movie-bee-full-rUxSaLgjcQbLO", // optional, but encouraged!
     taunt: "Let's do thisss thang!", // optional, but encouraged!
     head_type: "tongue",
     tail_type: "curled",
