@@ -59,7 +59,7 @@ try{
                     data.move = lastMove;  
                 }
 
-                  if (snake.coords[0][1] == req.body.food[0][1] && snake.coords[0][0] == (startVar.height-1) && lastMove == 'right'){
+                  if (snake.coords[0][1] == req.body.food[0][1]){
                       data.move = 'up'
                       console.log(snake.coords[0][1], req.body.food[0][1]);
                       if (snake.coords[0][1] == 0){
