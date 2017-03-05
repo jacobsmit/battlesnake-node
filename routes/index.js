@@ -59,12 +59,12 @@ try{
                     data.move = lastMove;  
                 }
 
-                  if (snake.coords[0][0] == req.body.food[0][0] && snake.coords[0][1] == (startVar.width-1)){
-                      data.move = 'left'
-                      console.log(snake.coords[0][0], req.body.food[0][0]);
+                  if (snake.coords[0][1] == req.body.food[0][1] && snake.coords[0][1] == (startVar.height-1) && lastMove == 'right'){
+                      data.move = 'up'
+                      console.log(snake.coords[0][1], req.body.food[0][1]);
                       if (snake.coords[0][1] == 0){
-                          data.move = 'down';  
-                          console.log(snake.coords[0][0]);
+                          data.move = 'left';  
+                          console.log(snake.coords[0][1]);
                       }
                   }
              } 
