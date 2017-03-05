@@ -33,6 +33,16 @@ var data = {
       taunt: 'You Like Jazz??', // optional, but encouraged!
     }
 try{ 
+    for (i = 0; i < req.body.food.length; i++) {
+        if (req.body.food[i][1] == 1){
+            if (lastMove == 'lef't && snake.coords[0][1] ==1){
+                  data.move = 'up';
+              {
+                 if (lastMove == 'right' && snake.coords[0][1] ==1){
+                  data.move = 'down';
+              {
+        }
+    }
     for (let snake of req.body.snakes){
         if (req.body.you == snake.id) {
              if (loopStarted == true) {
@@ -58,9 +68,6 @@ try{
                 else {
                     data.move = lastMove;  
                 }
-               for (var i = 0; i < 6; i++) {
-                  console.log(req.body.food[i][0]);  
-               }
              } 
              if (loopStarted == false) {
                  if (snake.coords[0][0] == 0) {
