@@ -66,7 +66,7 @@ try{
                    console.log(snake.coords);
                    console.log(loopStarted, "Setting Loop started as true");
                    lastMove = 'down';
-               for (var i; i < 6; i++) {
+               for (var i = 0; i < 6; i++) {
                   console.print(req.body.food[i][0]);  
                }
                  }
@@ -75,7 +75,6 @@ try{
     }
 } catch(error){console.log(error)}
   console.log(data.move);
-  console.log(req.body.food);
   console.log(startVar);
   return res.json(data) 
 })
